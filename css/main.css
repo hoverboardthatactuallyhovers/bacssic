@@ -1,0 +1,200 @@
+/* bacssic | MIT License | https://github.com/joedanhol/bacssic */
+/* Version 0.8 Finished on 12/10/2014 */
+
+/* Written and edited by Joseph Holmes*/
+/* Feel free to edit this as you like!*/
+
+/* This CSS has only been tested in Chrome, Although it should work in any other browser 
+ * I cannot make any guarenttes */
+
+/*========================
+ * The basic styling 
+ *========================*/
+
+/* Giving all places of input and the entire document the same font color to ensure that the
+ * design is consistent, customize your font color here for all of the inputs and the main document */
+
+html,
+input,
+button,
+textarea,
+select	{
+	color: #242424;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+/* Basic Font styling for the document removing text shadow for design consistency, If you would like to add
+ * text shadow for the main body's of text do it here
+ * Also making all the body text the same size and giving a good spacing between the lines */
+
+html {
+	font-size: 1em;
+	text-shadow: none;
+	line-height: 1.2;
+}
+
+/* Making the 'hr' attribute look allot better than default */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/* Remove the gap between images, videos, audio and canvas and the bottom of their containers */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/* Making sure that textarea's can only be vertically resized for design reasons */
+
+textarea {
+	resize: vertical;	
+}
+
+/*========================
+ * Selection
+ *========================*/
+/* Selection for text; Highlight color and text color, also making sure that we have the shadow removed for design reasons */
+/* Change the 'color' attribute to change the font color, and the 'background' attribute for back*/
+
+::-moz-selection {
+    background: #b3d4fc;
+    color: #fff;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    color: #fff;
+    text-shadow: none;
+}
+
+/*========================
+ * Special functions
+ *========================*/
+/* These functions provide the most basic of things a developer will need whilst making any web-application */
+
+/* Allows for any element to be hidden using the ' class="hidden" ' in html (hides for the browser and the user) */
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/* Hide visually, but maintain layout */
+.invisible {
+    visibility: hidden;
+}
+
+/*===============================
+ * Responsive Design Extra Styles
+ *===============================*/
+
+@media only screen and (min-width: 35em) {
+    /* Style for viewports that meat the conditions (in this case a minimum of 35em) */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style for viewports that meat the conditions (in this case high resolution displays) */
+}
+
+/* Print styles, inlined to avoid required HTTP connection */
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster but you can change this */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /* Don't show links for images, or javascript/internal links */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+/*=================================
+ * Your custom styles here! Go mad!
+ *=================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*=================================
+ * End Of Stylesheet
+ *=================================*/
