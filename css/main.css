@@ -1,11 +1,11 @@
 /* bacssic | MIT License | https://github.com/joedanhol/bacssic */
-/* Version 0.8 Finished on 12/10/2014 */
+/* Version 0.9 Finished on 13/10/2014 */
 
 /* Written and edited by Joseph Holmes*/
-/* Feel free to edit this as you like!*/
+/* Feel free to edit this as you like */
 
 /* This CSS has only been tested in Chrome, Although it should work in any other browser 
- * I cannot make any guarantees */
+ * I cannot make any guarenttes, I am currently testing this in the most widly used browsers */
 
 /*========================
  * The basic styling 
@@ -18,9 +18,9 @@ html,
 input,
 button,
 textarea,
-select  {
-    color: #242424;
-    font-family: Arial, Helvetica, sans-serif;
+select	{
+	color: #000;
+    font-family: Arial, Helvetica, sans-serif; 
 }
 
 /* Basic Font styling for the document removing text shadow for design consistency, If you would like to add
@@ -28,18 +28,32 @@ select  {
  * Also making all the body text the same size and giving a good spacing between the lines */
 
 html {
-    font-size: 1em;
-    text-shadow: none;
-    line-height: 1.2;
+    margin-left: 20px;
+    margin-right: 20px;
+	font-size: 1em;
+	text-shadow: none;
+	line-height: 1.2;
 }
 
-/* Making the 'hr' attribute look a lot better than default */
+/* Setting default margins (bottom) for all headers to zero simply to make them look better with paragraphs, You can change
+ * anything else for global headers here too */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0px;
+}
+
+/* Making the 'hr' attribute look allot better than default */
 
 hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid #ccc;
+    border-top: 2px solid #ccc; /* Change the size of the header here, in the first element (2px) if you dont like how big / small it is */
     margin: 1em 0;
     padding: 0;
 }
@@ -53,26 +67,26 @@ video {
     vertical-align: middle;
 }
 
-/* Making sure that textareas can only be vertically resized for design reasons */
+/* Making sure that textarea's can only be vertically resized for design reasons */
 
 textarea {
-    resize: vertical;
+	resize: vertical;	
 }
 
 /*========================
  * Selection
  *========================*/
 /* Selection for text; Highlight color and text color, also making sure that we have the shadow removed for design reasons */
-/* Change the 'color' attribute to change the font color, and the 'background' attribute for the background color*/
+/* Change the 'color' attribute to change the font color, and the 'background' attribute for back*/
 
 ::-moz-selection {
-    background: #b3d4fc;
+    background: #222;
     color: #fff;
     text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
+    background: #222;
     color: #fff;
     text-shadow: none;
 }
@@ -80,7 +94,7 @@ textarea {
 /*========================
  * Special functions
  *========================*/
-/* These functions provide the most basic of things a developer will need whilst making any web application */
+/* These functions provide the most basic of things a developer will need whilst making any web-application */
 
 /* Allows for any element to be hidden using the ' class="hidden" ' in html (hides for the browser and the user) */
 .hidden {
@@ -98,14 +112,15 @@ textarea {
  *===============================*/
 
 @media only screen and (min-width: 35em) {
-    /* Style for viewports that meet the conditions (in this case a minimum width of 35em) */
+    /* Style for viewports that meat the conditions (in this case a minimum of 35em) 
+    E.g making the text smaller, or making images smaller etc. */
 }
 
 @media print,
-(-o-min-device-pixel-ratio: 5/4),
-(-webkit-min-device-pixel-ratio: 1.25),
-(min-resolution: 120dpi) {
-    /* Style for viewports that meet the conditions (in this case high resolution displays) */
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style for viewports that meat the conditions (in this case high resolution displays) */
 }
 
 /* Print styles, inlined to avoid required HTTP connection */
