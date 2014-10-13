@@ -5,7 +5,7 @@
 /* Feel free to edit this as you like!*/
 
 /* This CSS has only been tested in Chrome, Although it should work in any other browser 
- * I cannot make any guarenttes */
+ * I cannot make any guarantees */
 
 /*========================
  * The basic styling 
@@ -18,9 +18,9 @@ html,
 input,
 button,
 textarea,
-select	{
-	color: #242424;
-    font-family: Arial, Helvetica, sans-serif; 
+select  {
+    color: #242424;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Basic Font styling for the document removing text shadow for design consistency, If you would like to add
@@ -28,9 +28,9 @@ select	{
  * Also making all the body text the same size and giving a good spacing between the lines */
 
 html {
-	font-size: 1em;
-	text-shadow: none;
-	line-height: 1.2;
+    font-size: 1em;
+    text-shadow: none;
+    line-height: 1.2;
 }
 
 /* Making the 'hr' attribute look a lot better than default */
@@ -53,17 +53,17 @@ video {
     vertical-align: middle;
 }
 
-/* Making sure that textarea's can only be vertically resized for design reasons */
+/* Making sure that textareas can only be vertically resized for design reasons */
 
 textarea {
-	resize: vertical;	
+    resize: vertical;
 }
 
 /*========================
  * Selection
  *========================*/
 /* Selection for text; Highlight color and text color, also making sure that we have the shadow removed for design reasons */
-/* Change the 'color' attribute to change the font color, and the 'background' attribute for back*/
+/* Change the 'color' attribute to change the font color, and the 'background' attribute for the background color*/
 
 ::-moz-selection {
     background: #b3d4fc;
@@ -80,7 +80,7 @@ textarea {
 /*========================
  * Special functions
  *========================*/
-/* These functions provide the most basic of things a developer will need whilst making any web-application */
+/* These functions provide the most basic of things a developer will need whilst making any web application */
 
 /* Allows for any element to be hidden using the ' class="hidden" ' in html (hides for the browser and the user) */
 .hidden {
@@ -98,14 +98,14 @@ textarea {
  *===============================*/
 
 @media only screen and (min-width: 35em) {
-    /* Style for viewports that meat the conditions (in this case a minimum of 35em) */
+    /* Style for viewports that meet the conditions (in this case a minimum width of 35em) */
 }
 
 @media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
-    /* Style for viewports that meat the conditions (in this case high resolution displays) */
+(-o-min-device-pixel-ratio: 5/4),
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 120dpi) {
+    /* Style for viewports that meet the conditions (in this case high resolution displays) */
 }
 
 /* Print styles, inlined to avoid required HTTP connection */
